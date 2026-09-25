@@ -51,7 +51,7 @@ export default defineConfig({
     
     trace: 'retain-on-failure',
     browserName: 'chromium',
-    headless: false,
+    headless: !process.env.CI,
     screenshot: 'on',
 
 
