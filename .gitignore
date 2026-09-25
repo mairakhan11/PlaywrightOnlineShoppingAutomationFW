@@ -1,0 +1,14 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+# Authentication and secrets
+auth.json
+state1.json
+.env
+# Local screenshots
+Partialscreenshot.png
+screenshot.png
