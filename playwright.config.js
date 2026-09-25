@@ -51,7 +51,7 @@ export default defineConfig({
     
     trace: 'retain-on-failure',
     browserName: 'chromium',
-    headless: !process.env.CI,
+    headless: process.env.CI === 'true' || process.env.GITHUB_ACTIONS === 'true' ? true : false,
     screenshot: 'on',
 
 
